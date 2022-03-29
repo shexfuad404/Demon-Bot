@@ -10,13 +10,13 @@ module.exports = {
   
   const embed = new Discord.MessageEmbed()
   .setAuthor(`${message.author.username}`, `${message.author.avatarURL({dynamic:true})}`)
-    .setTitle("Helpful Links")
+    .setTitle("Help Links")
   
-    .setDescription(` **[Add To Your Server](https://discord.com/oauth2/authorize?client_id=756951234916909056&permissions=8&scope=bot)**
+    .setDescription(` **[Add To Your Server](link bot)**
 
-                      **[Dash bord](https://protection-plus.xyz/)** 
+                      **[Dash bord](dashbord bot)** 
 
-                      **[Support server](https://discord.gg/ytNU3cE)** 
+                      **[Support server](link server)** 
 
 Use \`+commands\` to show the bot commands
 `)
