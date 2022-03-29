@@ -4,7 +4,7 @@
 
 # [Devil Staff website](https://bit.ly/devillstaffsite)
 
-# Dastkari hic shtik maka tanha token dane tawaw
+# Dastkari hic shtik maka tanha token Link data baysakan lera dane tawaw config json
 
 # masheka he xhot wa7shi awa ba to nakre 
 
