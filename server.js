@@ -132,9 +132,9 @@ manager.on("giveawayReactionAdded", async (giveaway, member, reaction) => {
 
   
   passport.use(new Strategy({
-	clientID: "803919676618833941",
-	clientSecret: "uxntTUteCs3l4F6eN08Lr32HxbT_8ywN",
-	callbackURL: 'https://protection-plus.xyz/auth',
+	clientID: "id bot",
+	clientSecret: "secret bot",
+	callbackURL: 'domin',
 	scope: ['identify', 'guilds', 'guilds.join']
   },
   (accessToken, refreshToken, profile, done) => { 
@@ -152,7 +152,7 @@ manager.on("giveawayReactionAdded", async (giveaway, member, reaction) => {
  
 app.use(passport.initialize());
 app.use(passport.session());
-app.locals.domain = 'https://protection-plus.xyz/';
+app.locals.domain = '';
 app.use(express.static("public"));
 const https = require('https');
 app.set("view engine", "ejs");
@@ -212,11 +212,11 @@ app.set("view engine", "ejs");
   });
 
 app.get("/support", (req,res) => {
-  res.redirect("https://discord.gg/ytNU3cE")
+  res.redirect("link Server")
 })
 
 app.get("/invite", (req,res) => {
-  res.redirect(`https://discord.com/api/oauth2/authorize?client_id=803919676618833941&permissions=8&scope=bot`)
+  res.redirect(`link bot`)
 })
 
 
@@ -858,7 +858,7 @@ app.post("/api/vote" , (req , res) =>{
   let { bot , user , type , query , isWeekend } = req.body
   if(type !== "upvote") return res.send("not authorization");
   
-    client.channels.cache.get('806425473809645578').send(`<@${user}> Is Vote The Bot`)
+    client.channels.cache.get('').send(`<@${user}> Is Vote The Bot`)
    res.send("ok")
 })
 
@@ -1196,7 +1196,7 @@ await db1.add(`messages_${message.guild.id}`, 1)
 const prefix = "+"
 
 /*
-الكود اللي يزيد الكريدت و اكس بي بالتفاعل تحت
+
 */
 
 client.on("message", async message =>{ 
@@ -1265,8 +1265,8 @@ new Discord.MessageEmbed()
 .setDescription(message.content)
 .setColor("#9c1c34"))
 .then( msg => {
-msg.react("<:14:814379979064213504>")
-msg.react("<:13:814379327516442664>")
+msg.react("")
+msg.react("")
 })
 })
   client.on('messageReactionRemove', async (reaction, user) => {
